@@ -91,7 +91,7 @@ int main()
 
     } while (command != 'q');
 
-    return 1;
+    return 1; 
 }
 
 
@@ -265,7 +265,7 @@ void transpose_matrix(int** matrix, int** matrix_t, int row, int col) // 2차원
     return; // 성공 상태 반환
 }
 
-void multiply_matrix(int** matrix_a, int** matrix_t, int row, int col) 
+void multiply_matrix(int** matrix_a, int** matrix_t, int row, int col) // 두 개의 2차원 배열(행렬)의 각각의 성분을 계산해(곱셈) 새로운 2차원 배열을 생성하는 함수
 {
     int** matrix_axt = create_matrix(row, row); // 결과 행렬을 저장할 이차원 배열 생성
 	
